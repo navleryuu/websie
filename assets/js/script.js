@@ -45,3 +45,17 @@ document.querySelectorAll('.btn').forEach(button => {
     });
   });
 });
+
+
+        // JavaScript to handle the SweetAlert on button click
+        document.querySelectorAll('.book-now').forEach(function(button) {
+          button.addEventListener('click', function(event) {
+              event.preventDefault();
+              Swal.fire({
+                  icon: 'info',
+                  title: 'Fitur Masih Dalam Tahap Pengembangan',
+                  text: 'Fitur ini belum tersedia saat ini. Silakan coba lagi nanti.',
+                  confirmButtonText: 'OK'
+              });
+          });
+      });
